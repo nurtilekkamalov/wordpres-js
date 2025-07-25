@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run generate && concurrently \"faust dev\" \"npm run watch-codegen\"",
-    "build": "npm run generate && faust build",
-    "generate": "faust generatePossibleTypes && graphql-codegen",
-    "start": "faust start",
+    "dev": "npm run generate && concurrently \"npx faust dev\" \"npm run watch-codegen\"",
+    "build": "npm run generate && npx faust build",
+    "generate": "npx faust generatePossibleTypes && graphql-codegen",
+    "start": "npx faust start",
     "codegen": "graphql-codegen",
     "watch-codegen": "graphql-codegen -w",
     "wc": "graphql-codegen -w",
@@ -17,5 +17,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@faustjs/cli": "^0.16.3",         // ⚠️ укажите точную версию, подходящую для вашего проекта
+    "concurrently": "^8.2.0",
+    "graphql": "^16.8.1",
+    "graphql-codegen": "^0.0.0",       // замените на конкретную, если нужно
+    "typescript": "^5.3.3"
+  }
 }
