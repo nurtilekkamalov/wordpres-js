@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run generate && concurrently \"node_modules/.bin/faust dev\" \"npm run watch-codegen\"",
-    "build": "npm run generate && node_modules/.bin/faust build",
-    "generate": "node_modules/.bin/faust generatePossibleTypes && graphql-codegen",
-    "start": "node_modules/.bin/faust start",
+    "dev": "npm run generate && concurrently \"node cli.js dev\" \"npm run watch-codegen\"",
+    "build": "npm run generate && node cli.js build",
+    "generate": "node cli.js generatePossibleTypes && graphql-codegen",
+    "start": "node cli.js start",
     "codegen": "graphql-codegen",
     "watch-codegen": "graphql-codegen -w",
     "wc": "graphql-codegen -w",
@@ -21,7 +21,6 @@
     "@faustjs/core": "0.15.13"
   },
   "devDependencies": {
-    "@faustjs/cli": "0.15.3",
     "@graphql-codegen/cli": "^3.0.0",
     "concurrently": "^8.2.0",
     "graphql": "^16.8.1",
