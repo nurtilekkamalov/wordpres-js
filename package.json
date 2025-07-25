@@ -48,16 +48,16 @@
     "redux-persist": "^6.0.0",
     "sass": "^1.69.5"
   },
-  "devDependencies": {
-    "@faustwp/cli": "^1.2.0",
-    "@graphql-codegen/cli": "^5.0.0",
-    "@graphql-codegen/client-preset": "^4.1.0",
-    "@graphql-codegen/typescript": "^3.2.0",
-    "@graphql-codegen/typescript-operations": "^3.2.0",
-    "@graphql-codegen/typescript-react-apollo": "^3.2.0",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5",
-    "typescript": "^5.3.3"
-  }
+ "devDependencies": {
+  "@faustwp/cli": "^1.2.0",
+  "@graphql-codegen/cli": "^5.0.0",
+  "@graphql-codegen/client-preset": "^4.1.0",
+  "@graphql-codegen/typescript": "^2.10.3",
+  "@graphql-codegen/typescript-operations": "^2.10.3",
+  "@graphql-codegen/typescript-react-apollo": "^3.2.0",
+  "autoprefixer": "^10.4.16",
+  "postcss": "^8.4.31",
+  "tailwindcss": "^3.3.5",
+  "typescript": "^5.3.3"
+}
 }
