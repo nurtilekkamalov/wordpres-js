@@ -1,10 +1,21 @@
-"scripts": {
-  "dev": "npm run generate && concurrently \"faust dev\" \"npm run watch-codegen\"",
-  "build": "npm run generate && faust build",
-  "generate": "faust generatePossibleTypes && graphql-codegen",
-  "start": "faust start",
-  "codegen": "graphql-codegen",
-  "watch-codegen": "graphql-codegen -w",
-  "wc": "graphql-codegen -w",
-  "tsc": "tsc"
-},
+{
+  "name": "wordpres-js",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run generate && concurrently \"faust dev\" \"npm run watch-codegen\"",
+    "build": "npm run generate && faust build",
+    "generate": "faust generatePossibleTypes && graphql-codegen",
+    "start": "faust start",
+    "codegen": "graphql-codegen",
+    "watch-codegen": "graphql-codegen -w",
+    "wc": "graphql-codegen -w",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    // сюда вставьте свои зависимости, если есть
+  },
+  "devDependencies": {
+    // сюда — dev-зависимости, если нужно
+  }
+}
