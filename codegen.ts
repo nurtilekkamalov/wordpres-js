@@ -3,7 +3,7 @@ const { loadEnvConfig } = require("@next/env");
 loadEnvConfig(process.cwd());
 
 const config: CodegenConfig = {
-  schema: https://worldnomad.iprofiit.pro/graphql
+  schema: https://worldnomad.iprofiit.pro/graphql,
   documents: ["src/**/*.tsx", "src/**/*.ts"], // <--- ВОТ ВАЖНОЕ ИЗМЕНЕНИЕ
   generates: {
     "./src/__generated__/": {
