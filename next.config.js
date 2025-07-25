@@ -1,4 +1,5 @@
 const { withFaust, getWpHostname } = require("@faustwp/core");
+const path = require("path");
 
 /**
  * @type {import('next').NextConfig}
@@ -58,5 +59,11 @@ module.exports = withFaust({
         pathname: "/**",
       },
     ],
+  },
+
+  // 👇 ВСТАВКА Webpack alias для "@"
+  webpack: (config) => {
+    config.resolve.alias["@"] = path.resolve(__dirname, "src");
+    return config;
   },
 });
