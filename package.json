@@ -12,10 +12,6 @@
     "wc": "graphql-codegen -w",
     "tsc": "tsc"
   },
-  "dependencies": {
-    // сюда вставьте свои зависимости, если есть
-  },
-  "devDependencies": {
-    // сюда — dev-зависимости, если нужно
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
