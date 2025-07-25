@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "faust dev",
-    "build": "faust build",
-    "generate": "faust generate",
-    "start": "faust start"
+    "dev": "npx faust dev",
+    "build": "npx faust build",
+    "generate": "npx faust generate",
+    "start": "npx faust start"
   },
   "dependencies": {
     "@apollo/client": "^3.8.4",
