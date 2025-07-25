@@ -3,28 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run generate && concurrently \"npx faust dev\" \"npm run watch-codegen\"",
-    "build": "npm run generate && npx faust build",
-    "generate": "npx faust generatePossibleTypes && graphql-codegen",
-    "start": "npx faust start",
-    "codegen": "graphql-codegen",
-    "watch-codegen": "graphql-codegen -w",
-    "wc": "graphql-codegen -w",
-    "tsc": "tsc"
+    "dev": "faust dev",
+    "build": "faust build",
+    "generate": "faust generate",
+    "start": "faust start"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.4",
+    "@faustwp/core": "^1.2.0",
+    "graphql": "^16.8.1",
     "next": "14.0.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@faustwp/core": "^1.2.0",
-    "@faustwp/next": "^1.2.0",
-    "@faustwp/react": "^1.2.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@faustwp/cli": "^1.2.0",
-    "@graphql-codegen/cli": "^3.0.0",
-    "concurrently": "^8.2.0",
-    "graphql": "^16.8.1",
     "typescript": "^5.3.3"
   }
 }
