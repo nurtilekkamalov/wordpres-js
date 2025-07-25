@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "$(npm bin)/faust dev",
-    "build": "$(npm bin)/faust build",
-    "generate": "$(npm bin)/faust generate",
-    "start": "$(npm bin)/faust start"
+    "dev": "npx faust dev",
+    "build": "npx faust build",
+    "generate": "npx faust generate",
+    "start": "npx faust start"
   },
   "dependencies": {
     "@apollo/client": "^3.8.4",
@@ -17,6 +17,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@faustwp/cli": "^1.2.0",
     "typescript": "^5.3.3"
   }
 }
