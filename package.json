@@ -18,10 +18,10 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@faustjs/cli": "^0.16.3",         // ⚠️ укажите точную версию, подходящую для вашего проекта
+    "@faustjs/cli": "^0.16.3",
     "concurrently": "^8.2.0",
     "graphql": "^16.8.1",
-    "graphql-codegen": "^0.0.0",       // замените на конкретную, если нужно
+    "graphql-codegen": "^0.0.0",
     "typescript": "^5.3.3"
   }
 }
