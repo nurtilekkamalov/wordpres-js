@@ -3,7 +3,7 @@ const { loadEnvConfig } = require("@next/env");
 loadEnvConfig(process.cwd());
 
 const config: CodegenConfig = {
-  schema: `${process.env.NEXT_PUBLIC_WORDPRESS_URL}?cache_bust=${Date.now()}`,
+  schema: https://worldnomad.iprofiit.pro/graphql
   documents: ["src/**/*.tsx", "src/**/*.ts"], // <--- ВОТ ВАЖНОЕ ИЗМЕНЕНИЕ
   generates: {
     "./src/__generated__/": {
