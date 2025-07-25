@@ -5,15 +5,11 @@ loadEnvConfig(process.cwd());
 
 const config: CodegenConfig = {
   schema: `${process.env.NEXT_PUBLIC_WORDPRESS_URL}/graphql`,
-  documents: ["src/**/*.ts", "src/**/*.tsx"],
+  documents: ["src/**/*.{ts,tsx}"],
   generates: {
     "./src/__generated__/": {
       preset: "client",
-      plugins: [
-        "typescript",
-        "typescript-operations",
-        "typescript-react-apollo",
-      ],
+      plugins: [], // ❗️тут пусто!
       presetConfig: {
         gqlTagName: "gql",
       },
