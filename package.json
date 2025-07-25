@@ -52,9 +52,10 @@
     "@faustwp/cli": "^1.2.0",
     "@graphql-codegen/cli": "^5.0.0",
     "@graphql-codegen/client-preset": "^4.1.0",
-    "typescript": "^5.3.3",
-    "tailwindcss": "^3.3.5",
+    "@graphql-codegen/typescript": "^3.2.0",
+    "@graphql-codegen/typescript-operations": "^3.2.0",
+    "@graphql-codegen/typescript-react-apollo": "^3.2.0",
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31"
-  }
-}
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "t
