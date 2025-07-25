@@ -16,12 +16,12 @@
     "next": "14.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@faustwp/next": "0.15.14",
-    "@faustwp/react": "0.15.13",
-    "@faustwp/core": "0.15.13"
+    "@faustwp/core": "^1.2.0",
+    "@faustwp/next": "^1.2.0",
+    "@faustwp/react": "^1.2.0"
   },
   "devDependencies": {
-    "@faustwp/cli": "0.15.3",
+    "@faustwp/cli": "^1.2.0",
     "@graphql-codegen/cli": "^3.0.0",
     "concurrently": "^8.2.0",
     "graphql": "^16.8.1",
