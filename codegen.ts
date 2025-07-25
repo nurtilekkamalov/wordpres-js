@@ -3,11 +3,8 @@ const { loadEnvConfig } = require("@next/env");
 loadEnvConfig(process.cwd());
 
 const config: CodegenConfig = {
-  schema: `${process.env.NEXT_PUBLIC_WORDPRESS_URL?.replace(
-    /\/$/,
-    ""
-  )}/graphql`,
-  documents: ["src/**/*.{tsx,ts}"],
+  schema: process.env.NEXT_PUBLIC_WORDPRESS_URL,
+  documents: ["src/**/*.tsx", "src/**/*.ts"], // <--- ВОТ ВАЖНОЕ ИЗМЕНЕНИЕ
   generates: {
     "./src/__generated__/": {
       preset: "client",
