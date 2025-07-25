@@ -3,7 +3,7 @@ const { loadEnvConfig } = require("@next/env");
 loadEnvConfig(process.cwd());
 
 const config: CodegenConfig = {
-  schema: process.env.NEXT_PUBLIC_WORDPRESS_URL,
+  schema: `${process.env.NEXT_PUBLIC_WORDPRESS_URL}?cache_bust=${Date.now()}`,
   documents: ["src/**/*.tsx", "src/**/*.ts"], // <--- ВОТ ВАЖНОЕ ИЗМЕНЕНИЕ
   generates: {
     "./src/__generated__/": {
