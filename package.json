@@ -16,7 +16,7 @@
     "next": "14.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@faustjs/next": "^0.15.3"
+    "@faustjs/next": "^0.15.14"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^3.0.0",
